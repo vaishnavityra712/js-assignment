@@ -1,0 +1,12 @@
+Data types are used to classify one particular type of data in programming languages. For instance, a number and a string of characters are different types of data that will be treated differently by JavaScript.
+There are eight basic data types in JavaScript.
+1. The number type represents both integer and floating point numbers. There are many operations for numbers, e.g. multiplication *, division /, addition +, subtraction -, and so on.
+2. A string in JavaScript must be surrounded by quotes. It represents a word or series of words.
+3. The boolean type has only two values: true and false. This type is commonly used to store yes/no values: true means “yes, correct”, and false means “no, incorrect”.
+4. The special null value does not belong to any of the types described above. It forms a separate type of its own which contains only the null value.
+5. The special value undefined also stands apart. It makes a type of its own, just like null. The meaning of undefined is “value is not assigned”. If a variable is declared, but not assigned, then its value is undefined.
+6. The object type is special. All other types are called “primitive” because their values can contain only a single thing (be it a string or a number or whatever). In contrast, objects are used to store collections of data and more complex entities.
+7. The typeof operator returns the type of the argument. It’s useful when we want to process values of different types differently or just want to do a quick check.
+It supports two forms of syntax.
+As an operator: typeof x.
+         As a function: typeof(x).
