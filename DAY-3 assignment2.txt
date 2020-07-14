@@ -1,0 +1,36 @@
+<!-- var -->
+function begin () {
+ for (var i=0; i<5; i++) {
+  console.log(i) 
+ }
+<!-- i is accessible outside the for loop
+ console.log(i) -->
+}
+<!-- Although the variable i is declared inside the for-loop, it is still accessible outside the scope of the for-loop. This is because the var variables are accessible within the scope of the function that they are declared. var variables have a function-scope, if they are not declared within a function, they have a global-scope. -->
+ 
+
+<!--let -->
+function begin () {
+ for (let i=0; i<5; i++) {
+  console.log(i) 
+ }
+<!-- i is not defined and will return an error
+ console.log(i) -->
+}
+<!--  let is block-scoped and variables declared within a block of code cannot be accessed outside of it. -->
+
+
+<!-- Const -->
+const name = 'Aditi';
+let age = 18;
+<!--can reassign age-->
+age = 27;
+
+<!--In the same example, I cannot assign another value to the const name. -->
+
+const name = 'Aditi';
+let age = 25;
+age = 27;
+// cannot re-assign name. will throw error
+name = 'Aditi Jha';
+<!--This example above will throw an error when name is: TypeError: Assignment to constant variable. Const cannot be re-assigned or re-defined. It’s scope is within a block of code. -->
